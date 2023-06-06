@@ -78,15 +78,6 @@ const Toolbar: ToolbarComponent = React.forwardRef<HTMLDivElement, ToolbarProps>
       alignItems="flex-start"
       {...rest}
     >
-      <PredefinedRanges
-        wrap
-        className={prefix('ranges')}
-        ranges={ranges}
-        calendarDate={calendarDate}
-        locale={locale}
-        disabledShortcut={disabledShortcut}
-        onClickShortcut={onClickShortcut}
-      />
       <div className={prefix('right')}>
         <SubmitButton
           disabledOkBtn={disabledOkBtn}
